@@ -47,6 +47,8 @@ function addItemToCart(button, cart) {
   const name = menuItem.querySelector('h2').textContent;
   const price = parseFloat(button.dataset.price);
   const quantity = parseInt(menuItem.querySelector('.quantity-input').value);
+  // Get the image URL from the menu item
+  const imageUrl = menuItem.querySelector('img').src;
 
   const existingItem = cart.find(item => item.id === id);
 
@@ -58,7 +60,8 @@ function addItemToCart(button, cart) {
       name,
       price,
       quantity,
-      type: 'item'
+      type: 'item',
+      image: imageUrl // Add the image URL to the cart item
     });
   }
 
@@ -74,6 +77,9 @@ function addSubscriptionToCart(button, cart) {
   const priceText = tierCard.querySelector('.price').textContent;
   const price = parseFloat(priceText.replace('$', ''));
   const id = `sub-${button.dataset.subscription}`;
+  // Get the subscription icon or default image
+  const iconElement = tierCard.querySelector('.tier-icon i');
+  const iconClass = iconElement ? iconElement.className : 'fas fa-crown';
 
   const existingItem = cart.find(item => item.id === id);
 
@@ -83,7 +89,9 @@ function addSubscriptionToCart(button, cart) {
       name: `${name} Subscription`,
       price,
       quantity: 1,
-      type: 'subscription'
+      type: 'subscription',
+      iconClass: iconClass, // Store the icon class for subscriptions
+      image: null // Set to null for subscriptions as they use icons
     });
 
     saveCart(cart);
