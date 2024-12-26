@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rachid Snacks</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-content">
+      <a href="/" class="logo">
+        <span class="logo-text">Rachid</span>
+        <span class="logo-icon">🥨</span>
+        <span class="logo-text">Snacks</span>
+      </a>
+      <a href="/cart.html" class="cart-button">
+        <i class="fas fa-shopping-cart"></i>
+        Cart (<span id="cart-count">0</span>)
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="animate-on-scroll">Welcome to Rachid Snacks</h1>
+        <p class="animate-on-scroll">Delicious meals made just for you</p>
+        <div class="hero-features animate-on-scroll">
+          <div class="feature">
+            <i class="fas fa-truck"></i>
+            <span>Fast Delivery</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-star"></i>
+            <span>Top Quality</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-heart"></i>
+            <span>Made with Love</span>
+          </div>
+        </div>
+        <a href="#menu" class="cta-button animate-on-scroll">
+          <i class="fas fa-arrow-down"></i>
+          Explore Menu
+        </a>
+      </div>
+      <div class="hero-image parallax" data-speed="-0.2">
+        <img src="rachid snack.jpeg" alt="Delicious Snacks">
+      </div>
+    </section>
+    <section id="menu" class="menu-section">
+      <h2 class="section-title animate-on-scroll">Our Menu</h2>
+      <div class="menu">
+        <!-- Original menu items -->
+        <div class="menu-item animate-on-scroll">
+          <div class="menu-item-tag">Bestseller</div>
+          <img src="https://z-p3-scontent.frba4-2.fna.fbcdn.net/o1/v/t0/f2/m340/AQM-adQW0Odl3JXtlL7WawnheqFuaFGz49sk_AiB7yL1CtIj6Sd9u8nhqMz1dbex-re90RwJ8cMcqF2phSkiS_WzzAx_WkKxRLI1CdBlPUHOdFQQr4lJii6g8GDaUrPH07S057qXZIkIPD2OGUZsVfzAIOY.jpeg?_nc_ht=z-p3-scontent.frba4-2.fna.fbcdn.net&_nc_cat=110&ccb=9-4&oh=00_AYATGqo3aoBJkB66mlNdCEhrWlXx6MIG3PO3gJmqJIvJrA&oe=676FBBD2&_nc_sid=5b3566&_nc_zt=23" alt="Classic Rachid Meal" />
+          <div class="menu-item-content">
+            <h2>Classic Rachid Meal</h2>
+            <p>Our signature dish with special sauce, perfectly seasoned and grilled to perfection.</p>
+            <p class="price">12.99</p>
+            <div class="quantity-controls">
+              <button class="quantity-btn" data-action="decrease">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="number" value="1" min="1" class="quantity-input" />
+              <button class="quantity-btn" data-action="increase">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="add-to-cart" data-id="classic" data-price="12.99">
+              <i class="fas fa-shopping-cart"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="menu-item animate-on-scroll">
+          <div class="menu-item-tag">Bestseller</div>
+          <img src="https://www.sargento.com/assets/Uploads/Recipe/Image/burger_0__FillWzExNzAsNTgzXQ.jpg" alt="Classic Rachid Meal" />
+          <div class="menu-item-content">
+            <h2>Cheeseburger</h2>
+            <p>Our signature dish with special sauce, perfectly seasoned and grilled to perfection.</p>
+            <p class="price">12.99</p>
+            <div class="quantity-controls">
+              <button class="quantity-btn" data-action="decrease">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="number" value="1" min="1" class="quantity-input" />
+              <button class="quantity-btn" data-action="increase">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="add-to-cart" data-id="classic" data-price="12.99">
+              <i class="fas fa-shopping-cart"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div class="menu-item animate-on-scroll">
+          <div class="menu-item-tag">Bestseller</div>
+          <img src="https://ffcuisine.fr/wp-content/uploads/2024/05/1716804220_recette-facile-de-pizza-au-pepperoni-plaisir-gourmand-garantit.jpg" alt="Classic Rachid Meal" />
+          <div class="menu-item-content">
+            <h2>Pizza</h2>
+            <p>Our signature dish with special sauce, perfectly seasoned and grilled to perfection.</p>
+            <p class="price">12.99</p>
+            <div class="quantity-controls">
+              <button class="quantity-btn" data-action="decrease">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="number" value="1" min="1" class="quantity-input" />
+              <button class="quantity-btn" data-action="increase">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="add-to-cart" data-id="classic" data-price="12.99">
+              <i class="fas fa-shopping-cart"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- ... -->
+
+        <!-- New Additional Items -->
+        <div class="menu-item animate-on-scroll">
+          <div class="menu-item-tag">Spicy</div>
+          <img src="https://gloryofseoul.com/cdn/shop/products/7_616354ef-7412-4fb7-bd6f-26113b89870d.jpg?v=1676948688&width=1445" alt="Spicy Noodles" />
+          <div class="menu-item-content">
+            <h2>Spicy Noodles</h2>
+            <p>A fiery combination of spices and flavors that will ignite your taste buds.</p>
+            <p class="price">18.99</p>
+            <div class="quantity-controls">
+              <button class="quantity-btn" data-action="decrease">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="number" value="1" min="1" class="quantity-input" />
+              <button class="quantity-btn" data-action="increase">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="add-to-cart" data-id="spicy-deluxe" data-price="18.99">
+              <i class="fas fa-shopping-cart"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll">
+          <div class="menu-item-tag">Veggie</div>
+          <img src="https://www.zimbokitchen.com/wp-content/uploads/2020/07/GREEN-SALAD-II.jpg" alt="Green Paradise" />
+          <div class="menu-item-content">
+            <h2>Green Paradise</h2>
+            <p>A healthy and delicious vegetarian option packed with fresh vegetables and herbs.</p>
+            <p class="price">14.99</p>
+            <div class="quantity-controls">
+              <button class="quantity-btn" data-action="decrease">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="number" value="1" min="1" class="quantity-input" />
+              <button class="quantity-btn" data-action="increase">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="add-to-cart" data-id="green-paradise" data-price="14.99">
+              <i class="fas fa-shopping-cart"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item animate-on-scroll">
+          <div class="menu-item-tag">Premium</div>
+          <img src="https://z-p3-scontent.frba4-2.fna.fbcdn.net/o1/v/t0/f2/m340/AQOEgWmo90a2bR0sKBzRh6-8dDpLOCj7JM-zugKgk-AySiCF9eHfecWmVjcyxQWA2YZ6flVkzdpCnrXECbO9dRLdjUnkZNW74pwrgKR3oRl7r3eVkEihAo2JNWdPh1r4aSbG9-lMQG38b1g25TiQTmsanJE.jpeg?_nc_ht=z-p3-scontent.frba4-2.fna.fbcdn.net&_nc_cat=101&ccb=9-4&oh=00_AYCIcaISZ4hQ61L80xx2zByJ5I_kZlo5pqYjqE58fWpSgA&oe=676FA96B&_nc_sid=5b3566&_nc_zt=23" alt="Royal Feast" />
+          <div class="menu-item-content">
+            <h2>Royal Feast</h2>
+            <p>A luxurious combination of premium ingredients fit for royalty.</p>
+            <p class="price">24.99</p>
+            <div class="quantity-controls">
+              <button class="quantity-btn" data-action="decrease">
+                <i class="fas fa-minus"></i>
+              </button>
+              <input type="number" value="1" min="1" class="quantity-input" />
+              <button class="quantity-btn" data-action="increase">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+            <button class="add-to-cart" data-id="royal-feast" data-price="24.99">
+              <i class="fas fa-shopping-cart"></i>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription-banner animate-on-scroll">
+      <h2>Subscribe & Save</h2>
+      <p>Get your favorite snacks delivered weekly!</p>
+      <div class="subscription-tiers">
+        <div class="tier-card basic animate-on-scroll">
+          <div class="tier-icon">
+            <i class="fas fa-cookie"></i>
+          </div>
+          <h3>Basic</h3>
+          <p>5 snacks per week</p>
+          <ul class="features">
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Weekly Delivery
+            </li>
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Basic Snack Selection
+            </li>
+          </ul>
+          <p class="price">$29.99/month</p>
+          <button class="add-to-cart" data-subscription="basic">
+            <i class="fas fa-plus"></i>
+            Subscribe
+          </button>
+        </div>
+
+        <div class="tier-card premium animate-on-scroll">
+          <div class="tier-icon">
+            <i class="fas fa-cookie-bite"></i>
+          </div>
+          <h3>Premium</h3>
+          <p>10 snacks per week</p>
+          <ul class="features">
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Priority Delivery
+            </li>
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Premium Selection
+            </li>
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Monthly Bonus Snack
+            </li>
+          </ul>
+          <p class="price">$49.99/month</p>
+          <button class="add-to-cart" data-subscription="premium">
+            <i class="fas fa-plus"></i>
+            Subscribe
+          </button>
+        </div>
+
+        <div class="tier-card family animate-on-scroll">
+          <div class="tier-icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <h3>Family</h3>
+          <p>20 snacks per week</p>
+          <ul class="features">
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Express Delivery
+            </li>
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Exclusive Selection
+            </li>
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Weekly Bonus Snacks
+            </li>
+            <li class="feature">
+              <i class="fas fa-check"></i>
+              Family Size Portions
+            </li>
+          </ul>
+          <p class="price">$89.99/month</p>
+          <button class="add-to-cart" data-subscription="family">
+            <i class="fas fa-plus"></i>
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonials-container">
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-avatar">
+            <img src="https://media.istockphoto.com/id/1230749818/photo/portrait-of-smiling-male-owner-of-fashion-store-standing-in-front-of-clothing-display.jpg?s=612x612&w=0&k=20&c=xoWhF-hrQcbMEPDYncHiHF8HJX2YgmYt7T-KLCPZIpY=" alt="Sarah M." />
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The Mediterranean Mix is absolutely delicious! The weekly delivery makes it so
+            convenient. Best snack subscription I've ever had!"</p>
+          <p class="testimonial-author">Sarah M.</p>
+          <p class="testimonial-location">New York, NY</p>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-avatar">
+            <img src="https://www.tamasbedo.com/en/wp-content/uploads/2020/02/men.jpg" alt="James R." />
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="testimonial-text">"My family loves the Family subscription. The portions are perfect, and the
+            variety keeps everyone happy. Great value for money!"</p>
+          <p class="testimonial-author">James R.</p>
+          <p class="testimonial-location">Chicago, IL</p>
+        </div>
+
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-avatar">
+            <img src="https://st2.depositphotos.com/1037987/42002/i/450/depositphotos_420021494-stock-photo-portrait-female-owner-gift-store.jpg" alt="Emma L." />
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The Sweet & Spicy Combo is addictive! Fast delivery and always fresh. Can't
+            recommend enough!"</p>
+          <p class="testimonial-author">Emma L.</p>
+          <p class="testimonial-location">Los Angeles, CA</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-download">
+      <div class="app-content">
+        <div class="app-text animate-on-scroll">
+          <h2>Get the Rachid Snacks App</h2>
+          <p>Order faster, earn rewards, and track your deliveries in real-time!</p>
+          <div class="app-features">
+            <div class="app-feature">
+              <i class="fas fa-clock"></i>
+              <span>Quick Ordering</span>
+            </div>
+            <div class="app-feature">
+              <i class="fas fa-gift"></i>
+              <span>Loyalty Rewards</span>
+            </div>
+            <div class="app-feature">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Live Tracking</span>
+            </div>
+          </div>
+          <div class="app-buttons">
+            <a href="#" class="app-store-button">
+              <i class="fab fa-apple"></i>
+              <div class="button-text">
+                <span>Download on the</span>
+                <strong>App Store</strong>
+              </div>
+            </a>
+            <a href="#" class="app-store-button">
+              <i class="fab fa-google-play"></i>
+              <div class="button-text">
+                <span>Get it on</span>
+                <strong>Google Play</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Rachid Snacks brings you the most delicious and authentic snacks, made with love and care.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#subscriptions">Subscriptions</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: hello@Rachidsnacks.com</p>
+        <p>Phone: (555) 123-4567</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
